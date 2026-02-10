@@ -70,6 +70,46 @@ app.get("/todos/:id", (req, res, next) => {
 });
 
 
+// CREATE new todo
+
+app.post("/todos", (req, res, next) => {
+
+  const { title, description } = req.body;
+
+  const newTodo = {
+    id: new Date().getTime(),
+    title,
+    description,
+  };
+
+  todoList.push(newTodo);
+
+  res.status(201).json({
+    message: "To-do item created successfully",
+    newTodo,
+  });
+
+});
+
+
+// DELETE todo
+
+app.delete("/todos/:id", (req, res, next) => {
+
+  const id = Number(req.params.id);
+
+  const index = todoList.findIndex((t) => t.id === id);
+
+  if (index === -1) return next(new HttpError("To-do item not found", 404));
+
+  const deletedTodo = todoList.splice(index, 1);
+
+  res.status(200).json({
+    message: "To-do item deleted successfully",
+    deletedTodo,
+  });
+  
+});
 
 
 // undefined routes handling
