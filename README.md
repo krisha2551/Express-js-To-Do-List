@@ -132,9 +132,6 @@ Body (JSON):
 ❌ Delete Todo
 DELETE /todos/:id
 
----
-
----
 
 ⚙️ Installation & Run
 
