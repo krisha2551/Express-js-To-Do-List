@@ -31,14 +31,14 @@ It supports full **CRUD operations** (Create, Read, Update, Delete) and demonstr
 
 ## 📁 Project Structure
 
-todo-api/
-│
-├── middleware/
-│ └── httpError.js
-│
-├── app.js
-├── package.json
-└── README.md
+todo-api/<br>
+│<br>
+├── middleware/<br>
+│   └── httpError.js<br>
+│<br>
+├── app.js<br>
+├── package.json<br>
+└── README.md<br>
 
 
 ---
@@ -48,33 +48,39 @@ todo-api/
 
 ### 📸 Screenshots
 
-**Home Route**  
+**Home Route**
+
 <img src="screenshots/home-route.png" alt="Home Route" width="700" />
 
 **Undefined Route Handling**  
+
 <img src="screenshots/undefined-route.png" alt="Undefined Route" width="700" />
 
 **Get All Todos**  
+
 <img src="screenshots/get-all-todos.png" alt="Get All Todos" width="700" />
 
-**Get Todo by ID**  
+**Get Todo by ID** 
+
 <img src="screenshots/get-todo-by-id.png" alt="Get Todo by ID" width="700" />
 
-**Create Todo**  
+**Create Todo** 
+
 <img src="screenshots/create.png" alt="Create Todo" width="700" />
 
 **Update Todo (PATCH)**  
+
 <img src="screenshots/update-todo-patch.png" alt="Update Todo PATCH" width="700" />
 
 **Update Todo (PUT)**  
+
 <img src="screenshots/update-todo-put.png" alt="Update Todo PUT" width="700" />
 
 **Delete Todo**  
+
 <img src="screenshots/delete-todo.png" alt="Delete Todo" width="700" />
 
 ---
-
-
 
 ⚙️ Installation & Run
 
@@ -152,5 +158,6 @@ Body (JSON):
 
 ❌ Delete Todo
 DELETE /todos/:id
+
 
 
