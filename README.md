@@ -83,7 +83,7 @@ todo-api/<br>
 ---
 
 ⚙️ Installation & Run
-
+```bash
 1. Clone the repository
 
 git clone https://github.com/your-username/todo-api.git
@@ -158,6 +158,7 @@ Body (JSON):
 
 ❌ Delete Todo
 DELETE /todos/:id
+
 
 
 
