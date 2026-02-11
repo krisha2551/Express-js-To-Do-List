@@ -82,6 +82,8 @@ todo-api/<br>
 
 ---
 
+---
+
 ## 📌 API Endpoints
 
 ### 🏠 Home
@@ -130,6 +132,10 @@ Body (JSON):
 ❌ Delete Todo
 DELETE /todos/:id
 
+---
+
+---
+
 ⚙️ Installation & Run
 
 1. Clone the repository
@@ -155,6 +161,7 @@ npm run dev
 5. Server will run on
 
 http://localhost:5000
+
 
 
 
