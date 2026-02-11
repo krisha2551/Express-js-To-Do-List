@@ -42,8 +42,6 @@ todo-api/<br>
 
 ---
 
----
-
 ## 🧪 Postman API Testing
 
 ### 📸 Screenshots
@@ -79,8 +77,6 @@ todo-api/<br>
 **Delete Todo**  
 
 <img src="screenshots/delete-todo.png" alt="Delete Todo" width="700" />
-
----
 
 ---
 
@@ -158,6 +154,7 @@ npm run dev
 5. Server will run on
 
 http://localhost:5000
+
 
 
 
