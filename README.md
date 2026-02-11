@@ -49,27 +49,35 @@ todo-api/<br>
 ### 📸 Screenshots
 
 **Home Route**  
+
 <img src="screenshots/home-route.png" alt="Home Route" width="700" />
 
-**Undefined Route Handling**  
+**Undefined Route Handling** 
+
 <img src="screenshots/undefined-route.png" alt="Undefined Route" width="700" />
 
-**Get All Todos**  
+**Get All Todos** 
+
 <img src="screenshots/get-all-todos.png" alt="Get All Todos" width="700" />
 
-**Get Todo by ID**  
+**Get Todo by ID** 
+
 <img src="screenshots/get-todo-by-id.png" alt="Get Todo by ID" width="700" />
 
-**Create Todo**  
+**Create Todo** 
+
 <img src="screenshots/create.png" alt="Create Todo" width="700" />
 
-**Update Todo (PATCH)**  
+**Update Todo (PATCH)** 
+
 <img src="screenshots/update-todo-patch.png" alt="Update Todo PATCH" width="700" />
 
-**Update Todo (PUT)**  
+**Update Todo (PUT)** 
+
 <img src="screenshots/update-todo-put.png" alt="Update Todo PUT" width="700" />
 
 **Delete Todo**  
+
 <img src="screenshots/delete-todo.png" alt="Delete Todo" width="700" />
 
 ---
@@ -147,6 +155,7 @@ npm run dev
 5. Server will run on
 
 http://localhost:5000
+
 
 
 
