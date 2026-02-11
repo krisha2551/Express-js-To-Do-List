@@ -111,7 +111,7 @@ http://localhost:5000
 
 ---
 
-## 📌 API Endpoints
+📌 API Endpoints
 
 ### 🏠 Home
 ```http
@@ -158,6 +158,7 @@ Body (JSON):
 
 ❌ Delete Todo
 DELETE /todos/:id
+
 
 
 
