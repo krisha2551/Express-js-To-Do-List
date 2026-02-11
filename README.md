@@ -107,7 +107,7 @@ npm run dev
 5. Server will run on
 
 http://localhost:5000
-
+---
 
 ---
 
@@ -158,6 +158,7 @@ Body (JSON):
 
 ❌ Delete Todo
 DELETE /todos/:id
+
 
 
 
