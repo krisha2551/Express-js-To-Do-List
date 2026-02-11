@@ -1,4 +1,5 @@
 import express from "express";
+
 import HttpError from "./middleware/httpError.js";
 
 const app = express();
@@ -92,21 +93,87 @@ app.post("/todos", (req, res, next) => {
 });
 
 
+// UPDATE todo (PATCH)
+
+app.patch("/todos/:id", (req, res) => {
+
+  const id = Number(req.params.id);
+
+  const { task, description } = req.body;
+
+  const todo = todoList.find((t) => t.id === id);
+
+  if (!todo) {
+    return res.status(404).json({
+      message: "To-do item not found",
+    });
+  }
+
+  if (task !== undefined) {
+  todo.task = task;
+}
+
+  if (description !== undefined) {
+  todo.description = description;
+}
+
+  res.status(200).json({ 
+     message: "To-do item updated successfully",
+    todo,
+  });
+  
+});
+
+
+// REPLACE todo (PUT)
+
+app.put("/todos/:id", (req, res) => {
+
+  const id = Number(req.params.id);
+
+  const { task, description } = req.body;
+
+  const index = todoList.findIndex((t) => t.id === id);
+
+  if (index === -1) {
+    return res.status(404).json({
+      message: "To-do item not found",
+    });
+  }
+
+  todoList[index] = {
+    ...todoList[index],
+    task,
+    description,
+  };
+
+  res.status(200).json({
+    message: "To-do item updated successfully",
+    todo: todoList[index],
+  });
+
+});
+
+
+
 // DELETE todo
 
 app.delete("/todos/:id", (req, res, next) => {
 
-  const id = Number(req.params.id);
+  const id = parseInt(req.params.id);
 
   const index = todoList.findIndex((t) => t.id === id);
 
-  if (index === -1) return next(new HttpError("To-do item not found", 404));
+  if (index === -1) {
+    return res.status(404).json({
+      message: "To-do item not found",
+    });
+  }
 
-  const deletedTodo = todoList.splice(index, 1);
+  todoList.splice(index, 1);
 
   res.status(200).json({
-    message: "To-do item deleted successfully",
-    deletedTodo,
+    message: "To-do item deleted successfully"
   });
   
 });
