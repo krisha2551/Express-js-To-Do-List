@@ -132,7 +132,9 @@ POST /todos
   "title": "Learn Express",
   "description": "Understand routing and middleware"
 }
+
 ✏️ Update Todo (PATCH)
+
 PATCH /todos/:id
 Body (JSON):
 
@@ -140,7 +142,9 @@ Body (JSON):
   "title": "Updated title",
   "description": "Updated description"
 }
+
 🔁 Replace Todo (PUT)
+
 PUT /todos/:id
 Body (JSON):
 
@@ -148,5 +152,7 @@ Body (JSON):
   "title": "New title",
   "description": "New description"
 }
+
 ❌ Delete Todo
+
 DELETE /todos/:id
