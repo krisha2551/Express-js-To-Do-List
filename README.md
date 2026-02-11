@@ -107,55 +107,10 @@ npm run dev
 5. Server will run on
 
 http://localhost:5000
----
-
----
-
-📌 API Endpoints
-🏠 Home
-GET /
-
-📋 Get All Todos
-GET /todos
-
-🔍 Get Todo by ID
-GET /todos/:id
-
-➕ Create Todo
-POST /todos
 
 
-Body (JSON):
-
-{
-  "title": "Learn Express",
-  "description": "Understand routing and middleware"
-}
-
-✏️ Update Todo (PATCH)
-PATCH /todos/:id
 
 
-Body (JSON):
-
-{
-  "task": "Updated title",
-  "description": "Updated description"
-}
-
-🔁 Replace Todo (PUT)
-PUT /todos/:id
-
-
-Body (JSON):
-
-{
-  "task": "New title",
-  "description": "New description"
-}
-
-❌ Delete Todo
-DELETE /todos/:id
 
 
 
