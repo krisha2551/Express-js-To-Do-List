@@ -31,14 +31,14 @@ It supports full **CRUD operations** (Create, Read, Update, Delete) and demonstr
 
 ## 📁 Project Structure
 
-todo-api/
-│
-├── middleware/
-│ └── httpError.js
-│
-├── app.js
-├── package.json
-└── README.md
+todo-api/<br>
+│<br>
+├── middleware/<br>
+│   └── httpError.js<br>
+│<br>
+├── app.js<br>
+├── package.json<br>
+└── README.md<br>
 
 
 ---
@@ -127,7 +127,6 @@ POST /todos
 
 
 **Body (JSON):**
-```json
 {
   "title": "Learn Express",
   "description": "Understand routing and middleware"
@@ -156,3 +155,4 @@ Body (JSON):
 ❌ Delete Todo
 
 DELETE /todos/:id
+
