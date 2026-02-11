@@ -31,15 +31,14 @@ It supports full **CRUD operations** (Create, Read, Update, Delete) and demonstr
 
 ## 📁 Project Structure
 
-todo-api/
-│
-├── middleware/
-│ └── httpError.js
-│
-├── app.js
-├── package.json
-└── README.md
-
+todo-api/<br>
+│<br>
+├── middleware/<br>
+│   └── httpError.js<br>
+│<br>
+├── app.js<br>
+├── package.json<br>
+└── README.md<br>
 
 ---
 
@@ -148,5 +147,6 @@ npm run dev
 5. Server will run on
 
 http://localhost:5000
+
 
 
