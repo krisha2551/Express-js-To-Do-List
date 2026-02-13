@@ -135,6 +135,7 @@ POST /todos
 ✏️ Update Todo (PATCH)
 
 PATCH /todos/:id
+
 Body (JSON):
 
 {
@@ -145,6 +146,7 @@ Body (JSON):
 🔁 Replace Todo (PUT)
 
 PUT /todos/:id
+
 Body (JSON):
 
 {
@@ -155,4 +157,5 @@ Body (JSON):
 ❌ Delete Todo
 
 DELETE /todos/:id
+
 
